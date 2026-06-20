@@ -171,7 +171,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $red;
+    color: $pink;
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 1.15;
@@ -184,7 +184,7 @@
     font-weight: 600;
 
     .is-active & {
-      background-color: $red;
+      background-color: $pink;
       color: $white;
     }
 
@@ -248,7 +248,7 @@
 
      &.is-active {
       color: $white;
-      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23FE131F'/></svg>");
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23DF1867'/></svg>");
    }
 
      @media (max-width: $mobile) {
