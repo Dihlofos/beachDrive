@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Roboto-Flex";
+  font-display: swap;
+  font-weight: 100 900; /* Define the available range of weight */
+  font-stretch: 75% 200%; /* Define the available range of width */
+  font-style: normal;
+  src: local("RobotoFlex"), local("RobotoFlex Regular"),
+    url("../fonts/RobotoFlex.woff2") format("woff2"),
+    url("../fonts/RobotoFlex.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat1";
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Montserrat"), local("Montserrat Medium"),
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Montserrat"), local("Montserrat Regular"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: local("Montserrat Italic"),
+    url("../fonts/Montserrat-Italic.woff2") format("woff2"),
+    url("../fonts/Montserrat-Italic.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "Montserrat";
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Montserrat"), local("Montserrat SemiBold"),
+    url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bounded";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Bounded"), local("Bounded Regular"),
+    url("../fonts/Bounded-Regular.woff2") format("woff2"),
+    url("../fonts/Bounded-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Unbounded";
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Unbounded"), local("Unbounded Medium"),
+    url("../fonts/Unbounded-Medium.woff2") format("woff2"),
+    url("../fonts/Unbounded-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Mossport";
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Mossport"),
+    url("../fonts/Mossport.woff2") format("woff2"),
+    url("../fonts/Mossport.woff") format("woff");
+}

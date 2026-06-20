@@ -1,0 +1,300 @@
+.map {
+   position: relative;
+   background-color: $orange;
+
+
+   .container {
+      position: relative;
+      padding: 6rem 0 9.8rem;
+
+      @media (max-width: $tablet) {
+        padding: 3.6rem 2.4rem 6.8rem;
+      }
+
+      @media (max-width: $tablet) {
+        padding: 3.6rem 2rem 5rem;
+      }
+   }
+
+   &__decor {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48.8rem;
+
+    @media (max-width: $tablet) {
+      right: -22rem;
+    }
+   }
+
+   &__title {
+    margin: 0 0 1.9rem;
+    font-stretch: 123%;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 1.1rem;
+    }
+
+   }
+
+   &__description {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 500;
+    max-width: 48.6rem;
+    margin: 0 0 4.2rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+      margin: 0 0 4rem;
+    }
+   }
+
+   &__vector {
+      width: 90rem;
+      position: absolute;
+      top: -15rem;
+      right: 0;
+      transform: translateX(40%);
+
+      @media (max-width: $tablet) {
+         display: none;
+      }
+   }
+
+
+   &__map {
+     position: relative;
+     width: 58.8rem;
+     height: 54.8rem;
+     background-color: $black;
+     z-index: 7;
+      overflow: hidden;
+
+     @media (max-width: $tablet) {
+       width: 100%;
+       height: 57.6rem;
+       margin: 0 0 4.4rem;
+     }
+
+     @media (max-width: $mobile) {
+      height: 31.4rem;
+    }
+   }
+
+   &__legend-wrapper {
+     position: relative;
+
+     &:before {
+      display: none;
+
+       content: '';
+       position: absolute;
+       width: 1px;
+       height: 100%;
+       left: 0.63rem;
+       top: 0;
+       background-color: $white;
+
+       @media (max-width: $tablet) {
+            display: none;
+      }
+     }
+
+     @media (max-width: $tablet) {
+      width: 100%;
+      }
+
+   }
+
+   &__legend {
+      min-width: 51rem;
+     position: relative;
+
+     @media (max-width: $tablet) {
+         padding-left: 0rem;
+         overflow: visible;
+         width: 100%;
+         height: auto;
+          min-width: auto;
+      }
+
+     &::-webkit-scrollbar {
+       width: 15px;
+     }
+
+     &::-webkit-scrollbar-track {
+       background: transparent;
+     }
+
+     &::-webkit-scrollbar-thumb {
+       background-color: $orange;
+        border: 3px solid transparent;
+       border-radius: 7px;
+       background-clip: content-box;
+
+     }
+
+   }
+
+   &__map-content {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     gap: 2.2rem;
+
+     @media (max-width: $tablet) {
+       flex-direction: column;
+       gap: 0.2rem;
+     }
+   }
+
+   &__legend-item {
+     width: 100%;
+     background: none;
+     border: none;
+     color: $white;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin: 0 0 1.2rem;
+     text-align: left;
+     font-family: $roboto;
+     cursor: pointer;
+
+     @media(max-width: $mobile) {
+      margin: 0 0 1.9rem;
+     }
+   }
+
+   &__legend-digit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $red;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.15;
+    font-weight: 700;
+    background-color: $white;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    flex-shrink: 0;
+    font-weight: 600;
+
+    .is-active & {
+      background-color: $red;
+      color: $white;
+    }
+
+    @media (max-width: $mobile) {
+      width: 2.8rem;
+      height: 2.8rem;
+      font-size: 1.6rem;
+    }
+   }
+
+
+   &__legend-title-wrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 1.6rem;
+      padding-top: .2rem;
+
+      @media(max-width:$mobile) {
+        padding-top: 0;
+      }
+    }
+
+   &__legend-title {
+     font-size: 2rem;
+     font-weight: 600;
+     line-height: 1.1;
+     margin: 0 0 0.9rem;
+
+   @media (max-width: $mobile) {
+      font-size: 2rem;
+      margin: 0 0 0.4rem;
+    }
+   }
+
+   ymaps {
+      canvas {
+         filter: grayscale(1);
+         -ms-filter: grayscale(1);
+         -webkit-filter: grayscale(1);
+         -moz-filter: grayscale(1);
+         -o-filter: grayscale(1);
+      }
+   }
+
+   &__marker {
+     display: flex;
+     align-items: center;
+     padding-bottom: 0.5rem;
+     justify-content: center;
+     text-transform: uppercase;
+     font-family: $roboto;
+     width: 4rem;
+     height: 5rem;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23FA9500'/></svg>");
+     background-size: contain;
+     cursor: pointer;
+     font-size: 2rem;
+     font-weight: 600;
+     line-height: 1;
+     color: $white;
+
+     &.is-active {
+      color: $white;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23FE131F'/></svg>");
+   }
+
+     @media (max-width: $mobile) {
+       width: 2.4rem;
+       height: 3rem;
+       font-size: 1.4rem;
+       padding-top: 0rem;
+     }
+   }
+
+
+   &__legend-title-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+   &__legend-content {
+      display: flex;
+      font-family: $monserrat;
+      gap: .8rem;
+   }
+
+   &__legend-pin {
+     display: flex;
+     align-items: center;
+      gap: 1.4rem;
+     color: $white;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 0.5;
+
+      a {
+        color: $white;
+      }
+
+      @media(max-width: $mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        line-height: 1;
+        gap: 1.1rem;
+      }
+   }
+ }
+
+
+

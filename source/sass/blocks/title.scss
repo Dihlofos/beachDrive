@@ -1,0 +1,28 @@
+.title {
+  color: $red;
+  font-family: $roboto;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 790;
+  line-height: 1.15;
+  text-transform: uppercase;
+  font-stretch: 139%;
+  letter-spacing: 0.35rem;
+
+  &--white {
+    color: $white;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 3.2rem;
+    line-height: 1;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 3.2rem;
+    font-weight: 790;
+    font-stretch: 141%;
+    line-height: 1;
+    letter-spacing: 0.4rem;
+  }
+}
