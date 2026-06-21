@@ -159,7 +159,7 @@
      align-items: flex-start;
      margin: 0 0 1.2rem;
      text-align: left;
-     font-family: $roboto;
+     font-family: $monserrat;
      cursor: pointer;
 
      @media(max-width: $mobile) {
@@ -235,7 +235,7 @@
      padding-bottom: 0.5rem;
      justify-content: center;
      text-transform: uppercase;
-     font-family: $roboto;
+     font-family: $monserrat;
      width: 4rem;
      height: 5rem;
       background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23FA9500'/></svg>");

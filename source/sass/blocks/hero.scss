@@ -1,3 +1,132 @@
 .hero {
+  position: relative;
   background: linear-gradient(180deg, #8E003F -29.28%, #DF1867 87.68%);
+  overflow: hidden;
+
+  .container {
+    padding: 13.4rem 0 11rem;
+    position: relative;
+  }
+
+  &__top,
+  &__bottom {
+    position: relative;
+    z-index: 7;
+  }
+
+  &__palm {
+    position: absolute;
+    bottom: -6.3rem;
+    right: -4rem;
+    z-index: 4;
+  }
+
+  &__texture {
+    left: -1rem;
+    &--1 {
+      bottom: -4.8rem;
+      z-index: 5;
+    }
+
+    &--2 {
+      bottom: 2.7rem;
+      z-index: 3;
+    }
+
+    &--3 {
+      bottom: 9.5rem;
+      z-index: 2;
+    }
+  }
+
+  &__title {
+    font-family: $mossport;
+    font-size: 20rem;
+    line-height: 0.86;
+    text-transform: uppercase;
+    color: $orange;
+    max-width: 57.9rem;
+    margin: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__top {
+    display: flex;
+    gap: 4rem;
+  }
+
+  &__text {
+    font-family: $unbounded;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    font-weight: 500;
+    transform: rotate(-5deg);
+    max-width: 33.2rem;
+    margin: 2.4rem 0 10rem
+  }
+
+  &__days {
+    font-family: $mossport;
+    font-size: 4.4rem;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $orange;
+  }
+
+  &__every {
+    font-size: 2rem;
+    line-height: 1.2;
+    color: $white;
+    font-weight: 600;
+    max-width: 28.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &__label {
+    font-family: $unbounded;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: $white;
+    padding: 2rem 5.6rem;
+    background-color: $green;
+    border-radius: 30px;
+    width: fit-content;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 4rem;
+    margin-top: 2.2rem;
+  }
+
+  &__locations {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: $orange;
+
+    &:first-child {
+      max-width: 25rem;
+    }
+
+    &:last-child {
+      max-width: 23.8rem;
+    }
+  }
+
+  &__time {
+    margin-left: -21rem;
+  }
+
 }

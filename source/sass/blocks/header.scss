@@ -18,7 +18,7 @@
   &__logos-wrapper {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 2.2rem;
   }
 
    &__container {
@@ -67,11 +67,9 @@
 
   &__nav {
     position: relative;
-    padding: 2.3rem 0;
+    padding: 2.7rem 0;
     flex-shrink: 0;
     z-index: 2;
-
-
   }
 
   &__content {
