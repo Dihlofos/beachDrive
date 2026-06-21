@@ -13,8 +13,19 @@
    max-width: 48.6rem;
    border-radius: 10px;
 
+   @media (max-width: $tablet) {
+     max-width: 90%;
+     transform: none;
+     right: auto;
+     left: 50%;
+     transform: translateX(-50%);
+   }
+
    @media (max-width: $mobile) {
     transform: none;
+    left: 1rem;
+    right: 1rem;
+    max-width: unset;
    }
 
 

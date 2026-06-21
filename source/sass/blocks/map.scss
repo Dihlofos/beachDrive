@@ -7,11 +7,15 @@
       position: relative;
       padding: 6rem 0 9.8rem;
 
+      @media (max-width: $laptop) {
+        padding: 5rem 4.5rem 7rem;
+      }
+
       @media (max-width: $tablet) {
         padding: 3.6rem 2.4rem 6.8rem;
       }
 
-      @media (max-width: $tablet) {
+      @media (max-width: $mobile) {
         padding: 3.6rem 2rem 5rem;
       }
    }
@@ -22,8 +26,18 @@
     top: 0;
     width: 48.8rem;
 
+    @media (max-width: $laptop) {
+      width: 38rem;
+    }
+
     @media (max-width: $tablet) {
       right: -22rem;
+      width: 30rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 24rem;
+      right: -15rem;
     }
    }
 
@@ -43,6 +57,11 @@
     font-weight: 500;
     max-width: 48.6rem;
     margin: 0 0 4.2rem;
+
+    @media (max-width: $laptop) {
+      font-size: 1.8rem;
+      max-width: 40rem;
+    }
 
     @media (max-width: $mobile) {
       font-size: 1.6rem;
@@ -70,6 +89,11 @@
      background-color: $black;
      z-index: 7;
       overflow: hidden;
+
+     @media (max-width: $laptop) {
+       width: 48rem;
+       height: 48rem;
+     }
 
      @media (max-width: $tablet) {
        width: 100%;
@@ -111,6 +135,10 @@
       min-width: 51rem;
      position: relative;
 
+     @media (max-width: $laptop) {
+       min-width: 40rem;
+     }
+
      @media (max-width: $tablet) {
          padding-left: 0rem;
          overflow: visible;
@@ -142,6 +170,10 @@
      align-items: flex-start;
      justify-content: space-between;
      gap: 2.2rem;
+
+     @media (max-width: $laptop) {
+       gap: 1.6rem;
+     }
 
      @media (max-width: $tablet) {
        flex-direction: column;

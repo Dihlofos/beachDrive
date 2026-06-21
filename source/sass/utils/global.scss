@@ -12,6 +12,10 @@ html {
   @media (max-width: $tablet) {
     @include font(10px, 10px, 400);
   }
+
+  @media (max-width: $mobile) {
+    @include font(9px, 9px, 400);
+  }
 }
 
 body {

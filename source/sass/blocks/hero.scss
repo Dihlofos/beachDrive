@@ -6,6 +6,18 @@
   .container {
     padding: 13.4rem 0 11rem;
     position: relative;
+
+    @media (max-width: $laptop) {
+      padding: 10rem 0 8rem;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 8rem 2.4rem 6rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 6.8rem 2rem 4.5rem;
+    }
   }
 
   &__top,
@@ -19,10 +31,28 @@
     bottom: -6.3rem;
     right: -4rem;
     z-index: 4;
+
+    @media (max-width: $laptop) {
+      width: 25rem;
+      bottom: -4rem;
+      right: -2rem;
+    }
+
+    @media (max-width: $tablet) {
+      width: 18rem;
+      bottom: -3rem;
+      right: -1rem;
+    }
+
+    @media (max-width: $mobile) {
+      width: 12rem;
+      bottom: -1.5rem;
+      right: 0;
+    }
   }
 
   &__texture {
-    left: -1rem;
+    background-position-x: -1rem;
     &--1 {
       bottom: -4.8rem;
       z-index: 5;
@@ -47,6 +77,21 @@
     color: $orange;
     max-width: 57.9rem;
     margin: 0;
+
+    @media (max-width: $laptop) {
+      font-size: 16rem;
+      max-width: 46rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 12rem;
+      max-width: 35rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 8rem;
+      max-width: 23rem;
+    }
   }
 
   &__wrapper {
@@ -56,6 +101,11 @@
   &__top {
     display: flex;
     gap: 4rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   &__text {
@@ -65,7 +115,25 @@
     font-weight: 500;
     transform: rotate(-5deg);
     max-width: 33.2rem;
-    margin: 2.4rem 0 10rem
+    margin: 2.4rem 0 10rem;
+
+    @media (max-width: $laptop) {
+      font-size: 2rem;
+      max-width: 28rem;
+      margin: 2rem 0 6rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+      max-width: 24rem;
+      margin: 1.5rem 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      max-width: 19rem;
+      margin: 1rem 0 3rem;
+    }
   }
 
   &__days {
@@ -74,6 +142,18 @@
     line-height: 1;
     text-transform: uppercase;
     color: $orange;
+
+    @media (max-width: $laptop) {
+      font-size: 3.6rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 2.4rem;
+    }
   }
 
   &__every {
@@ -83,6 +163,14 @@
     font-weight: 600;
     max-width: 28.5rem;
     margin-top: 0.5rem;
+
+    @media (max-width: $laptop) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+    }
   }
 
   &__label {
@@ -94,17 +182,42 @@
     background-color: $green;
     border-radius: 30px;
     width: fit-content;
+
+    @media (max-width: $laptop) {
+      font-size: 1.6rem;
+      padding: 1.6rem 4rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 1.4rem;
+      padding: 1.2rem 3rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.2rem;
+      padding: 1rem 2.4rem;
+    }
   }
 
   &__bottom {
     display: flex;
     gap: 4rem;
     margin-top: 2.2rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
 
   &__locations {
     display: flex;
     gap: 0.8rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 0.6rem;
+    }
   }
 
   &__location {
@@ -123,10 +236,30 @@
     &:last-child {
       max-width: 23.8rem;
     }
+
+    @media (max-width: $laptop) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 1.3rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.2rem;
+    }
   }
 
   &__time {
     margin-left: -21rem;
+
+    @media (max-width: $laptop) {
+      margin-left: -16rem;
+    }
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+    }
   }
 
 }

@@ -115,6 +115,11 @@
         display: none;
       }
 
+      @media (max-width: $laptop) {
+        width: 3rem;
+        padding: 14rem 0 0;
+      }
+
       @media (max-width: $tablet) {
         padding: 6rem 0 0;
         width: 2rem;
@@ -161,6 +166,14 @@
 
     .swiper-wrapper {
       padding-left: calc((100% - 140rem) / 2);
+
+      @media (max-width: $laptop) {
+        padding-left: calc((100% - 120rem) / 2);
+      }
+
+      @media (max-width: $tablet) {
+        padding-left: 2.4rem;
+      }
 
       @media (max-width: $mobile) {
         padding-left: 0;

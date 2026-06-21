@@ -87,6 +87,10 @@
     margin: 0;
     z-index: 10;
 
+    @media (max-width: $laptop) {
+      gap: 2rem;
+    }
+
     @media (max-width: $tablet) {
       margin: 0;
       flex-direction: column;
@@ -116,6 +120,10 @@
 
     &:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: $laptop) {
+      font-size: 1.3rem;
     }
 
     @media (max-width: $tablet) {
