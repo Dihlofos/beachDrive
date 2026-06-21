@@ -8,11 +8,17 @@
   background: transparent;
 
   &.is-scrolled {
-    background-color: $pink;
+    background-color: #8E003F;
 
     @media (max-width: $tablet) {
       background: transparent;
     }
+  }
+
+  &__logos-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
 
    &__container {
