@@ -1,18 +1,18 @@
 .about {
-  padding: 9.6rem 0;
+  padding: 8.7rem 0;
   background-color: $white;
   color: $black;
 
   &__title {
     text-align: center;
-    margin: 0 0 7.4rem;
+    margin: 0 0 8.4rem;
   }
 
   &__text {
     font-family: $bounded;
     font-size: 2.4rem;
     line-height: 1.2;
-    max-width: 48.8rem;
+    max-width: 58.8rem;
   }
 
   &__info-top {
@@ -27,17 +27,18 @@
     display: flex;
     justify-content: space-between;
     gap: 2.4rem;
-    padding: 0 0 22.5rem;
+    padding: 0 0 19.5rem;
   }
 
   &__image-palms {
-    margin-top: -15rem;
+    margin-top: -13.1rem;
+    margin-left: -5rem;
   }
 
   &__image-balls {
     position: absolute;
-    bottom: 5rem;
-    right: -2rem;
+    bottom: 4.7rem;
+    right: -3.8rem;
   }
 
   &__image {
@@ -47,25 +48,26 @@
   &__pink {
     position: relative;
     background-color: $pink;
-    padding: 5.1rem 6rem 25rem;
+    padding: 5.1rem 6rem 20rem;
     border-radius: 50px;
     overflow: hidden;
   }
 
   &__texture {
-    background-position-x: -1rem;
+    background-position-x: -3.2rem;
+
     &--1 {
-      bottom: -4.8rem;
+      bottom: -4.2rem;
       z-index: 5;
     }
 
     &--2 {
-      bottom: 2.7rem;
+      bottom: 2.4rem;
       z-index: 3;
     }
 
     &--3 {
-      bottom: 9.5rem;
+      bottom: 8.2rem;
       z-index: 2;
     }
   }
@@ -81,25 +83,34 @@
     width: 46.3rem;
 
     &--2 {
-      margin-top: -4rem;
-      width: 42.3rem;
+      margin-top: -7.5rem;
+      width: 42.5rem;
       margin-bottom: 7.5rem;
     }
     &--3 {
       width: 40.1rem;
-      margin-left: 4rem;
-      margin-top: -10rem;
+      margin-left: 4.3rem;
+      margin-top: -16.5rem;
     }
 
     &--4 {
-      margin-right: 8rem;
+      margin-right: 6.5rem;
     }
   }
 
-  &__bullit-image--abs {
-    position: absolute;
-    top: -2rem;
-    right: -2rem;
+  &__bullit-image {
+    position: relative;
+    top: 2.6rem;
+    left: 5.6rem;
+
+    &--abs {
+      position: absolute;
+      top: -4rem;
+      right: -9.4rem;
+      left: auto;
+
+    }
+
   }
 
   &__bullit-title {
@@ -121,15 +132,15 @@
 
   &__palms {
     position: absolute;
-    left: 2rem;
+    left: 4.8rem;
     bottom: 0;
     z-index: 5;
   }
 
   &__yogamat {
     position: absolute;
-    right: 2rem;
-    bottom: 10rem;
+    right: 10.5rem;
+    bottom: 8rem;
     z-index: 6;
   }
 }
