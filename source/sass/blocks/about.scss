@@ -3,9 +3,25 @@
   background-color: $white;
   color: $black;
 
+  @media (max-width: $tablet) {
+    padding: 6rem 0;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 4rem 0;
+  }
+
   &__title {
     text-align: center;
     margin: 0 0 8.4rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 3rem;
+    }
   }
 
   &__text {
@@ -13,6 +29,15 @@
     font-size: 2.4rem;
     line-height: 1.2;
     max-width: 58.8rem;
+
+    @media (max-width: $tablet) {
+      font-size: 2rem;
+      max-width: 100%;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.6rem;
+    }
   }
 
   &__info-top {
@@ -20,6 +45,16 @@
     gap: 2.4rem;
     margin: 0 0 5.6rem;
 
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 2rem;
+      margin: 0 0 3rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 1.6rem;
+      margin: 0 0 2rem;
+    }
   }
 
   &__info-bottom {
@@ -28,21 +63,45 @@
     justify-content: space-between;
     gap: 2.4rem;
     padding: 0 0 19.5rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 1.6rem;
+      padding: 0;
+    }
   }
 
   &__image-palms {
     margin-top: -13.1rem;
     margin-left: -5rem;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__image-balls {
     position: absolute;
     bottom: 4.7rem;
     right: -3.8rem;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__image {
     border-radius: 10px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__pink {
@@ -51,6 +110,17 @@
     padding: 5.1rem 6rem 20rem;
     border-radius: 50px;
     overflow: hidden;
+
+    @media (max-width: $tablet) {
+      padding: 4rem 3rem 20rem;
+      border-radius: 30px;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 3rem 2rem 20rem;
+      border-radius: 20px;
+    }
   }
 
   &__texture {
@@ -70,12 +140,38 @@
       bottom: 8.2rem;
       z-index: 2;
     }
+
+    @media(max-width: $tablet) {
+      background-size: 100%;
+      background-position-x: 0;
+
+      &--3 {
+        bottom: -2rem;
+      }
+
+      &--1 {
+        bottom: -5rem;
+      }
+
+      &--2 {
+        bottom: -3.5rem
+      }
+    }
   }
 
   &__bullits {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 3.5rem;
+    }
   }
 
   &__bullit {
@@ -96,6 +192,11 @@
     &--4 {
       margin-right: 6.5rem;
     }
+
+    @media (max-width: $tablet) {
+      width: 100%;
+      margin: 0;
+    }
   }
 
   &__bullit-image {
@@ -108,7 +209,9 @@
       top: -4rem;
       right: -9.4rem;
       left: auto;
-
+    }
+    @media (max-width: $tablet) {
+      display: none;
     }
 
   }
@@ -120,6 +223,15 @@
     font-family: $unbounded;
     color: $orange;
     margin: 0 0 1.6rem;
+
+    @media (max-width: $tablet) {
+      font-size: 3.2rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 2.4rem;
+      margin: 0 0 1rem;
+    }
   }
 
   &__bullit-text {
@@ -128,6 +240,14 @@
     line-height: 1.2;
     font-family: $monserrat;
     color: $white;
+
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+    }
   }
 
   &__palms {
@@ -135,6 +255,15 @@
     left: 4.8rem;
     bottom: 0;
     z-index: 5;
+
+    @media (max-width: $laptop) {
+      width: 32rem;
+    }
+
+    @media (max-width: $tablet) {
+      width: 20rem;
+      left: 0;
+    }
   }
 
   &__yogamat {
@@ -142,5 +271,11 @@
     right: 10.5rem;
     bottom: 8rem;
     z-index: 6;
+
+    @media (max-width: $tablet) {
+      width: 10rem;
+      bottom: 2rem;
+      right: 5rem;
+    }
   }
 }

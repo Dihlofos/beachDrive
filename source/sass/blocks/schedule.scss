@@ -1,0 +1,28 @@
+.schedule {
+  position: relative;
+  overflow: hidden;
+
+  &__texture {
+    background-position-x: -1rem;
+    &--1 {
+      bottom: -6.8rem;
+      z-index: 5;
+    }
+
+    &--2 {
+      bottom: -2rem;
+      z-index: 3;
+    }
+
+    &--3 {
+      bottom: 4.5rem;
+      z-index: 2;
+    }
+
+
+    &--4 {
+      bottom: 1.5rem;
+      z-index: 2;
+    }
+  }
+}

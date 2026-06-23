@@ -1,6 +1,7 @@
 .map {
    position: relative;
-   background-color: $orange;
+   background-color: $white;
+   color: $black;
 
 
    .container {
@@ -185,7 +186,7 @@
      width: 100%;
      background: none;
      border: none;
-     color: $white;
+     color: $black;
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
@@ -217,7 +218,7 @@
 
     .is-active & {
       background-color: $pink;
-      color: $white;
+      color: $black;
     }
 
     @media (max-width: $mobile) {

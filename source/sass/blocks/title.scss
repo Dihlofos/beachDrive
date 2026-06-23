@@ -12,15 +12,12 @@
   }
 
   @media (max-width: $tablet) {
-    font-size: 3.2rem;
+    font-size: 6rem;
     line-height: 1;
   }
 
   @media (max-width: $mobile) {
-    font-size: 3.2rem;
-    font-weight: 790;
-    font-stretch: 141%;
+    font-size: 5rem;
     line-height: 1;
-    letter-spacing: 0.4rem;
   }
 }
