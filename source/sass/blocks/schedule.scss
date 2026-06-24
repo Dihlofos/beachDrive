@@ -1,6 +1,104 @@
 .schedule {
   position: relative;
   overflow: hidden;
+  padding: 0 0 14.3rem;
+
+  .container {
+    position: relative;
+  }
+
+  &__decor {
+    position: absolute;
+
+    &--top {
+      top: 0;
+      right: 0;
+    }
+
+  }
+
+  &__top {
+    margin: 0 0 6.4rem;
+  }
+
+  &__flex {
+    display: flex;
+    gap: 4.8rem;
+  }
+
+  &__subtitle {
+    color: $orange;
+    font-family: $unbounded;
+    font-size: 4rem;
+    line-height: 1.1;
+
+    .schedule__bottom & {
+      width: 42rem;
+    }
+  }
+
+
+  &__card {
+    position: relative;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 3.3rem 4.8rem 3.8rem 4.8rem;
+    color: $black;
+    z-index: 10;
+  }
+
+  &__days {
+    display: flex;
+    gap: 4.8rem;
+  }
+
+  &__day-name {
+    color: $pinkLight;
+    font-family: $unbounded;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0 0 2.6rem;
+  }
+
+  &__card-title {
+    color: $pinkLight;
+    font-family: $unbounded;
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0 0 3.6rem;
+  }
+
+  &__active {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 1.1rem;
+    gap: 2rem;
+  }
+
+  &__active-name {
+    color: $pinkLight;
+    font-family: $unbounded;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    min-width: 16.4rem;
+  }
+
+  &__active-time {
+    font-family: $monserrat;
+    font-size: 2rem;
+    line-height: 1.2;
+
+  }
+
+
+  &__beach-title {
+    color: $pinkLight;
+    font-family: $monserrat;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
 
   &__texture {
     background-position-x: -1rem;
