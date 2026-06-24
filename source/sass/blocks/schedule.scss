@@ -7,6 +7,10 @@
     position: relative;
   }
 
+  &__title {
+    color: $orange;
+  }
+
   &__line {
     position: relative;
     top: 9.5rem;
