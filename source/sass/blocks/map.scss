@@ -6,7 +6,7 @@
 
    .container {
       position: relative;
-      padding: 6rem 0 9.8rem;
+      padding: 11.6rem 0 11rem;
 
       @media (max-width: $laptop) {
         padding: 5rem 4.5rem 7rem;
@@ -21,30 +21,27 @@
       }
    }
 
-   &__decor {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 48.8rem;
+   &__route-link {
+    padding: 1rem 2rem;
+    color: $white;
+    background-color: $pinkLight;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    height: 100%;
+   }
 
-    @media (max-width: $laptop) {
-      width: 38rem;
-    }
-
-    @media (max-width: $tablet) {
-      right: -22rem;
-      width: 30rem;
-    }
-
-    @media (max-width: $mobile) {
-      width: 24rem;
-      right: -15rem;
-    }
+   &__content {
+    width: 38.4rem;
+    flex-shrink: 0;
+    margin-top: -0.6rem;
    }
 
    &__title {
-    margin: 0 0 1.9rem;
-    font-stretch: 123%;
+    margin: 0 0 2.7rem;
 
     @media (max-width: $mobile) {
       margin: 0 0 1.1rem;
@@ -57,7 +54,7 @@
     line-height: 1.2;
     font-weight: 500;
     max-width: 48.6rem;
-    margin: 0 0 4.2rem;
+    margin: 0 0 3.5rem;
 
     @media (max-width: $laptop) {
       font-size: 1.8rem;
@@ -85,8 +82,8 @@
 
    &__map {
      position: relative;
-     width: 58.8rem;
-     height: 54.8rem;
+     width: 100%;
+     height: 48.82em;
      background-color: $black;
      z-index: 7;
       overflow: hidden;
@@ -108,7 +105,8 @@
    }
 
    &__legend-wrapper {
-     position: relative;
+    position: relative;
+    margin-right: 1.8rem;
 
      &:before {
       display: none;
@@ -133,12 +131,7 @@
    }
 
    &__legend {
-      min-width: 51rem;
      position: relative;
-
-     @media (max-width: $laptop) {
-       min-width: 40rem;
-     }
 
      @media (max-width: $tablet) {
          padding-left: 0rem;
@@ -170,7 +163,7 @@
      display: flex;
      align-items: flex-start;
      justify-content: space-between;
-     gap: 2.2rem;
+     gap: 2.4rem;
 
      @media (max-width: $laptop) {
        gap: 1.6rem;
@@ -191,6 +184,7 @@
      justify-content: space-between;
      align-items: flex-start;
      margin: 0 0 1.2rem;
+     font-weight: 500;
      text-align: left;
      font-family: $monserrat;
      cursor: pointer;
@@ -199,35 +193,6 @@
       margin: 0 0 1.9rem;
      }
    }
-
-   &__legend-digit {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $pink;
-    text-transform: uppercase;
-    font-size: 2rem;
-    line-height: 1.15;
-    font-weight: 700;
-    background-color: $white;
-    width: 4.4rem;
-    height: 4.4rem;
-    border-radius: 50%;
-    flex-shrink: 0;
-    font-weight: 600;
-
-    .is-active & {
-      background-color: $pink;
-      color: $black;
-    }
-
-    @media (max-width: $mobile) {
-      width: 2.8rem;
-      height: 2.8rem;
-      font-size: 1.6rem;
-    }
-   }
-
 
    &__legend-title-wrapper {
       display: flex;
@@ -241,8 +206,8 @@
     }
 
    &__legend-title {
-     font-size: 2rem;
-     font-weight: 600;
+     font-size: 1.6rem;
+     font-weight: 500;
      line-height: 1.1;
      margin: 0 0 0.9rem;
 
@@ -302,7 +267,7 @@
    &__legend-content {
       display: flex;
       font-family: $monserrat;
-      gap: .8rem;
+      gap: 4rem;
    }
 
    &__legend-pin {

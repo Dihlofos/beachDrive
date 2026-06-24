@@ -130,8 +130,8 @@
       document.querySelector(".js-map"),
       {
         location: {
-          center: [37.555435, 55.792],
-          zoom: vw > 767 ? 10 : 9,
+          center: [55.835855, 37.482502].reverse(),
+          zoom: vw > 767 ? 15 : 15,
         },
       },
       [new YMapDefaultSchemeLayer({}), new YMapDefaultFeaturesLayer({})],

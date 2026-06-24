@@ -1,18 +1,35 @@
 .schedule {
   position: relative;
   overflow: hidden;
-  padding: 0 0 14.3rem;
+  padding: 9rem 0 18.3rem;
 
   .container {
     position: relative;
   }
 
+  &__line {
+    position: relative;
+    top: 9.5rem;
+    right: 1rem;
+  }
+
   &__decor {
     position: absolute;
+    z-index: 4;
 
     &--top {
-      top: 0;
-      right: 0;
+      top: 1.1rem;
+      right: 3.8rem;
+    }
+
+    &--umbrella {
+      bottom: -18.8rem;
+      left: 23.3rem;
+    }
+
+    &--ball {
+      bottom: 0.6rem;
+      left: 7.5rem;
     }
 
   }
@@ -21,9 +38,13 @@
     margin: 0 0 6.4rem;
   }
 
+  &__title {
+    margin: 0 0 7.6rem;
+  }
+
   &__flex {
     display: flex;
-    gap: 4.8rem;
+    gap: 2.8rem;
   }
 
   &__subtitle {
@@ -45,11 +66,19 @@
     padding: 3.3rem 4.8rem 3.8rem 4.8rem;
     color: $black;
     z-index: 10;
+
+    &--top {
+      padding: 3.3rem 6.2rem 2.8rem 4.8rem;
+    }
+
+    &--bottom {
+      padding-bottom: 4.5rem;
+    }
   }
 
   &__days {
     display: flex;
-    gap: 4.8rem;
+    gap: 5.5rem;
   }
 
   &__day-name {
@@ -73,13 +102,13 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 1.1rem;
-    gap: 2rem;
+    gap: 1.6rem;
   }
 
   &__active-name {
     color: $pinkLight;
-    font-family: $unbounded;
     font-size: 3.2rem;
+    font-weight: 700;
     line-height: 1.1;
     min-width: 16.4rem;
   }
@@ -88,39 +117,151 @@
     font-family: $monserrat;
     font-size: 2rem;
     line-height: 1.2;
-
+    font-weight: 600;
+    white-space: nowrap;
+    margin-top: 1rem;
   }
 
+  &__info {
+    padding-top: 3.1rem;
+    min-width: 20rem;
+  }
+
+  &__info-text {
+
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: $monserrat;
+    margin: 1.3rem 0 0;
+    span {
+      border-radius: 20px;
+      background: rgba(254, 252, 241, 0.24);
+      padding: .4rem 1.2rem;
+    }
+  }
+
+  &__dates {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: $monserrat;
+    margin-top: 1.2rem;
+    p {
+      margin: 0 0 1.5rem;
+    }
+
+    span {
+      display: inline-flex;
+      border-radius: 20px;
+      background: rgba(254, 252, 241, 0.24);
+      padding: .3rem 1.4rem;
+      &+span {
+        margin-left: .7rem;
+      }
+    }
+  }
+
+  &__beach {
+    margin-top: -0.5rem;
+    & + .schedule__beach {
+      margin-top: 3.8rem
+    }
+  }
+
+  &__beach-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 .6rem;
+  }
 
   &__beach-title {
     color: $pinkLight;
     font-family: $monserrat;
-    font-size: 2rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.1;
   }
 
+  &__beach-time {
+    font-family: $monserrat;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+     white-space: nowrap;
+     margin-top: 1.1rem;
+  }
+
+  &__beach-day {
+    font-family: $monserrat;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+     white-space: nowrap;
+     flex-shrink: 0;
+
+  }
+
+  &__italic-text {
+    font-size: 1.6rem;
+    font-family: $monserrat;
+    line-height: 1.22;
+    font-style: italic;
+    font-weight: 400;
+    max-width: 65.6rem;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 3.6rem;
+    margin-top: 1.8rem;
+  }
+
+  &__action {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &__register-link {
+    display: inline-flex;
+    padding: 1.1rem 2.4rem;
+    background-color: $green;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $pink;
+    }
+  }
+
   &__texture {
     background-position-x: -1rem;
+    z-index: 2;
     &--1 {
-      bottom: -6.8rem;
-      z-index: 5;
+      bottom: -4rem;
+      z-index: 6;
     }
 
     &--2 {
-      bottom: -2rem;
+      bottom: 3.5rem;
       z-index: 3;
     }
 
     &--3 {
-      bottom: 4.5rem;
+      bottom: 10rem;
       z-index: 2;
     }
 
 
     &--4 {
-      bottom: 1.5rem;
-      z-index: 2;
+      bottom: 16.5rem;
+      z-index: 1;
     }
   }
 }
