@@ -11,6 +11,10 @@
     bottom: 1.2rem;
     right: 4.5rem;
     z-index: 4;
+
+    @media (max-width: $mobile) {
+      width: 15rem;
+    }
   }
 
   &__content {
@@ -28,7 +32,7 @@
     }
 
     @media (max-width: $mobile) {
-      padding: 3.8rem 0 4.9rem;
+      padding: 3.8rem 0 26rem;
     }
   }
 
@@ -121,7 +125,7 @@
     }
 
     @media (max-width: $mobile) {
-      width: 100%;
+      width: fit-content;
       justify-content: space-between;
       margin: 0 0 3.3rem;
     }

@@ -222,9 +222,9 @@
 
   // Клики по пунктам легенды
   legendItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      setActiveLegend(Number(item.dataset.thumbIndex));
-    });
+    // item.addEventListener("click", () => {
+    //   setActiveLegend(Number(item.dataset.thumbIndex));
+    // });
   });
 
   legendLinks.forEach((item) => {
@@ -330,13 +330,13 @@
       map.addChild(marker);
 
       markerElement.addEventListener("click", () => {
-        setActiveLegend(location.index);
-        const legendItem = [...legendItems].find(
-          (item) => Number(item.dataset.thumbIndex) === location.index,
-        );
-        legend.scrollTop = findPosition(legendItem) - findPosition(legend);
-        clearMarkers();
-        markerElement.classList.add("is-active");
+        // setActiveLegend(location.index);
+        // const legendItem = [...legendItems].find(
+        //   (item) => Number(item.dataset.thumbIndex) === location.index,
+        // );
+        // legend.scrollTop = findPosition(legendItem) - findPosition(legend);
+        // clearMarkers();
+        // markerElement.classList.add("is-active");
       });
     });
 

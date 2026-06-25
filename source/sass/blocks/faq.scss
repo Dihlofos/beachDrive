@@ -46,6 +46,10 @@
       right: -12.7rem;
       top: 28.2rem;
     }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
    }
 
 

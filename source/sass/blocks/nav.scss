@@ -38,11 +38,19 @@
     right: 0;
     width: 37.5rem;
     z-index: 1;
+
+    @media (max-width: $mobile) {
+      width: 20rem;
+    }
   }
 
   &__mobile-logo {
     display: block;
     margin: 0 0 4rem;
+
+    @media (max-width: $mobile) {
+      margin: 0;
+    }
   }
 
   &__mobile-toggler {
@@ -63,7 +71,7 @@
       width: 100%;
       height: 100%;
       background-color: $pink;
-      background: linear-gradient(14deg, #F8C768 -25.45%, #FF1420 99.97%);
+      background: linear-gradient(180deg, #8E003F -29.28%, #DF1867 87.68%);
       z-index: 72;
       padding: 2.8rem 2rem 1.5rem;
 
@@ -107,6 +115,15 @@
     width: 4.5rem;
     height: 4.5rem;
 
+  }
+
+  &__logos {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    margin: 0 0 4rem;
+    flex-wrap: wrap;
+    width: 27rem;
   }
 
   &__link {

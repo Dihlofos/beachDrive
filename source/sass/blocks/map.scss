@@ -38,6 +38,10 @@
     width: 38.4rem;
     flex-shrink: 0;
     margin-top: -0.6rem;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
    }
 
    &__title {
@@ -59,6 +63,10 @@
     @media (max-width: $laptop) {
       font-size: 1.8rem;
       max-width: 40rem;
+    }
+
+    @media (max-width: $tablet) {
+      max-width: unset;
     }
 
     @media (max-width: $mobile) {
@@ -133,12 +141,35 @@
    &__legend {
      position: relative;
 
+     span {
+      position: absolute;
+      top: 0;
+      left: -4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      padding: 0.4rem;
+      font-size: 1.6rem;
+      line-height: 1;
+      font-weight: 600;
+      background-color: $pink;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+     }
+
      @media (max-width: $tablet) {
          padding-left: 0rem;
          overflow: visible;
+        padding-left: 5rem;
          width: 100%;
          height: auto;
           min-width: auto;
+
+          span {
+            top: 0;
+          }
       }
 
      &::-webkit-scrollbar {
@@ -184,13 +215,15 @@
      justify-content: space-between;
      align-items: flex-start;
      margin: 0 0 1.2rem;
+     gap: 2rem;
      font-weight: 500;
      text-align: left;
      font-family: $monserrat;
-     cursor: pointer;
+     position: relative;
 
-     @media(max-width: $mobile) {
+     @media(max-width: $tablet) {
       margin: 0 0 1.9rem;
+      align-items: center;
      }
    }
 
@@ -211,10 +244,9 @@
      line-height: 1.1;
      margin: 0 0 0.9rem;
 
-   @media (max-width: $mobile) {
-      font-size: 2rem;
-      margin: 0 0 0.4rem;
-    }
+     @media (max-width: $tablet) {
+      margin: 0;
+     }
    }
 
    ymaps {
@@ -236,13 +268,14 @@
      font-family: $monserrat;
      width: 4rem;
      height: 5rem;
-      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23FA9500'/></svg>");
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='50' viewBox='0 0 40 50' fill='none'><path d='M40 20.5128C40 31.8417 20.0002 50 20.0002 50C20.0002 50 0 31.8417 0 20.5128C0 9.1839 8.9543 0 20 0C31.0457 0 40 9.1839 40 20.5128Z' fill='%23DF1867'/></svg>");
      background-size: contain;
      cursor: pointer;
      font-size: 2rem;
      font-weight: 600;
      line-height: 1;
      color: $white;
+     transform: translate(-2rem, -5rem);
 
      &.is-active {
       color: $white;
@@ -254,6 +287,8 @@
        height: 3rem;
        font-size: 1.4rem;
        padding-top: 0rem;
+
+       transform: translate(-1.2rem, -3rem);
      }
    }
 

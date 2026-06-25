@@ -3,6 +3,18 @@
   overflow: hidden;
   padding: 9rem 0 18.3rem;
 
+  @media (max-width: $laptop) {
+    padding: 7rem 0 14rem;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 5rem 0 21rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 4rem 0 21rem;
+  }
+
   .container {
     position: relative;
   }
@@ -15,6 +27,10 @@
     position: relative;
     top: 9.5rem;
     right: 1rem;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__decor {
@@ -24,18 +40,36 @@
     &--top {
       top: 1.1rem;
       right: 3.8rem;
+
+      @media (max-width: $laptop) {
+        width: 6rem;
+        height: auto;
+      }
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
     }
 
     &--umbrella {
       bottom: -18.8rem;
       left: 23.3rem;
+
+      @media (max-width: $tablet) {
+        display: none;
+      }
     }
 
     &--ball {
       bottom: 0.6rem;
       left: 7.5rem;
-    }
 
+      @media (max-width: $tablet) {
+        bottom: -15rem;
+        left: 4rem;
+
+      }
+    }
   }
 
   &__top {
@@ -44,11 +78,36 @@
 
   &__title {
     margin: 0 0 7.6rem;
+
+    @media (max-width: $laptop) {
+      margin: 0 0 5rem;
+    }
+
+    @media (max-width: $tablet) {
+      margin: 0 0 4rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 3.2rem;
+    }
   }
 
   &__flex {
     display: flex;
     gap: 2.8rem;
+
+    @media (max-width: $laptop) {
+      gap: 2rem;
+    }
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+      gap: 2.4rem;
+    }
   }
 
   &__subtitle {
@@ -59,9 +118,24 @@
 
     .schedule__bottom & {
       width: 42rem;
+
+      @media (max-width: $laptop) {
+        width: auto;
+      }
+    }
+
+    @media (max-width: $laptop) {
+      font-size: 3.2rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 2.2rem;
     }
   }
-
 
   &__card {
     position: relative;
@@ -73,16 +147,54 @@
 
     &--top {
       padding: 3.3rem 6.2rem 2.8rem 4.8rem;
+
+      @media (max-width: $laptop) {
+        padding: 2.8rem 3.2rem;
+      }
+
+      @media (max-width: $tablet) {
+        padding: 2.4rem;
+      }
+
+      @media (max-width: $mobile) {
+        padding: 1.6rem;
+      }
     }
 
     &--bottom {
       padding-bottom: 4.5rem;
+    }
+
+    @media (max-width: $laptop) {
+      padding: 2.8rem 3.2rem;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 2.4rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 1.6rem;
+      border-radius: 16px;
     }
   }
 
   &__days {
     display: flex;
     gap: 5.5rem;
+
+    @media (max-width: $laptop) {
+      gap: 3rem;
+    }
+
+    @media (max-width: $tablet) {
+      gap: 2rem;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 2.4rem;
+    }
   }
 
   &__day-name {
@@ -91,6 +203,19 @@
     font-size: 4rem;
     line-height: 1.1;
     margin: 0 0 2.6rem;
+
+    @media (max-width: $laptop) {
+      font-size: 3.2rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 2.2rem;
+      margin: 0 0 1.6rem;
+    }
   }
 
   &__card-title {
@@ -99,6 +224,19 @@
     font-size: 4rem;
     line-height: 1.1;
     margin: 0 0 3.6rem;
+
+    @media (max-width: $laptop) {
+      font-size: 3.2rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2.8rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 2.2rem;
+      margin: 0 0 2rem;
+    }
   }
 
   &__active {
@@ -107,6 +245,12 @@
     justify-content: space-between;
     margin: 0 0 1.1rem;
     gap: 1.6rem;
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+      gap: 0.4rem 1.2rem;
+      margin: 0 0 0.8rem;
+    }
   }
 
   &__active-name {
@@ -115,6 +259,21 @@
     font-weight: 700;
     line-height: 1.1;
     min-width: 16.4rem;
+
+    @media (max-width: $laptop) {
+      font-size: 2.4rem;
+      min-width: 12rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 2rem;
+      min-width: 10rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
+      min-width: auto;
+    }
   }
 
   &__active-time {
@@ -124,24 +283,46 @@
     font-weight: 600;
     white-space: nowrap;
     margin-top: 1rem;
+
+    @media (max-width: $tablet) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      margin-top: 0.4rem;
+    }
   }
 
   &__info {
     padding-top: 3.1rem;
     min-width: 20rem;
+
+    @media (max-width: $laptop) {
+      min-width: 16rem;
+    }
+
+    @media (max-width: $tablet) {
+      padding-top: 0;
+      min-width: 0;
+    }
   }
 
   &__info-text {
-
     font-size: 1.8rem;
     line-height: 1.2;
     font-weight: 600;
     font-family: $monserrat;
     margin: 1.3rem 0 0;
+
     span {
       border-radius: 20px;
       background: rgba(254, 252, 241, 0.24);
       padding: .4rem 1.2rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.5rem;
     }
   }
 
@@ -151,6 +332,7 @@
     font-weight: 600;
     font-family: $monserrat;
     margin-top: 1.2rem;
+
     p {
       margin: 0 0 1.5rem;
     }
@@ -163,6 +345,10 @@
       &+span {
         margin-left: .7rem;
       }
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.5rem;
     }
   }
 
@@ -177,6 +363,11 @@
     display: flex;
     justify-content: space-between;
     margin: 0 0 .6rem;
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
   }
 
   &__beach-title {
@@ -185,6 +376,14 @@
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.1;
+
+    @media (max-width: $tablet) {
+      font-size: 2.2rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
+    }
   }
 
   &__beach-time {
@@ -192,8 +391,13 @@
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.2;
-     white-space: nowrap;
-     margin-top: 1.1rem;
+    white-space: nowrap;
+    margin-top: 1.1rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      margin-top: 0;
+    }
   }
 
   &__beach-day {
@@ -201,9 +405,8 @@
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.2;
-     white-space: nowrap;
-     flex-shrink: 0;
-
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   &__italic-text {
@@ -213,18 +416,31 @@
     font-style: italic;
     font-weight: 400;
     max-width: 65.6rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+    }
   }
 
   &__actions {
     display: flex;
     gap: 3.6rem;
     margin-top: 1.8rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 1.2rem;
+    }
   }
 
   &__action {
     display: flex;
     gap: 1.5rem;
     align-items: center;
+
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+    }
   }
 
   &__register-link {
@@ -247,6 +463,7 @@
   &__texture {
     background-position-x: -1rem;
     z-index: 2;
+
     &--1 {
       bottom: -4rem;
       z-index: 6;
@@ -262,10 +479,13 @@
       z-index: 2;
     }
 
-
     &--4 {
       bottom: 16.5rem;
       z-index: 1;
+
+      @media (max-width: $mobile) {
+        display: none;
+      }
     }
   }
 }
