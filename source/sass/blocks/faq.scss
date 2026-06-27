@@ -148,6 +148,10 @@
       padding: 0 0 1.8rem;
       margin-top: -2.1rem;
 
+      a {
+        color: inherit;
+      }
+
       @media (max-width: $tablet) {
         margin-top: -1.6rem;
       }
