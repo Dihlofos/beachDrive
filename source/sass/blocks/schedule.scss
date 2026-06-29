@@ -23,6 +23,11 @@
     color: $orange;
   }
 
+  &__soon {
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+
   &__line {
     position: relative;
     top: 9.5rem;
