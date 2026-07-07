@@ -258,6 +258,17 @@
     }
   }
 
+  &__active-text {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    @media (max-width: $mobile) {
+      justify-content: space-between;
+      flex-grow:1;
+    }
+  }
+
   &__active-name {
     color: $pinkLight;
     font-size: 3.2rem;
@@ -462,6 +473,11 @@
 
     &:hover {
       background-color: $pink;
+    }
+
+    &--small {
+      padding: 1rem;
+      font-size: 1.2rem;
     }
   }
 
